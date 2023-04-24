@@ -5,7 +5,7 @@ import json
 url = "https://api.apilayer.com/exchangerates_data/latest?symbols=&base=USD"
 payload = {}
 headers= {
-  "apikey": "*****"
+  "apikey": {apikey}
 }
 response = requests.get(url, headers=headers, data=payload).text
 result = json.loads(response)
